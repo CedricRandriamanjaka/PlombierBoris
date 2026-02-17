@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html { scroll-behavior: smooth; }
+body { @apply bg-white text-brand-text; }
+.container { @apply mx-auto max-w-6xl px-4; }
+
+.btn {
+  @apply inline-flex items-center justify-center gap-2 px-5 py-3 font-semibold transition rounded-md;
+}
+.btn-cta { @apply bg-brand-cta text-white shadow-md hover:bg-brand-ctaHover; }
+.btn-primary { @apply bg-brand-primary text-white hover:opacity-95; }
+.btn-ghost { @apply bg-white text-brand-navy ring-1 ring-slate-200 hover:bg-slate-50; }
+.card { @apply bg-white shadow-soft ring-1 ring-slate-100 rounded-md; }
+
+.hero-shape {
+  position: absolute;
+  border-radius: 50% 40% 60% 50% / 60% 30% 70% 40%;
+  background: rgba(255,255,255,0.12);
+  pointer-events: none;
+}
+.hero-shape-1 { width: 280px; height: 280px; top: -80px; right: 10%; }
+.hero-shape-2 { width: 180px; height: 180px; top: 30%; right: -40px; background: rgba(255,255,255,0.08); }
+.img-organic { border-radius: 50% 40% 60% 50% / 60% 30% 70% 40%; }
+.img-plumber { border-radius: 55% 45% 50% 50% / 45% 55% 45% 55%; }
+.service-strip { border-left: 4px solid #0B5ED7; }
+.collage-img { position: absolute; overflow: hidden; border-radius: 8px; box-shadow: 0 4px 20px rgba(0,0,0,0.12); }
+.collage-1 { width: 55%; height: 70%; left: 0; top: 0; }
+.collage-2 { width: 45%; height: 50%; left: 35%; top: 10%; }
+.collage-3 { width: 45%; height: 50%; left: 15%; top: 45%; }
+.collage-4 { width: 45%; height: 50%; left: 50%; top: 35%; }
