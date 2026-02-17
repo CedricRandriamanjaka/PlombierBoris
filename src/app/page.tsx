@@ -1,7 +1,19 @@
 "use client";
 
+import Image from "next/image";
 import { Phone, Wrench, Star, Check, Droplets, Zap, Droplet, Gauge } from "lucide-react";
 import { motion } from "framer-motion";
+
+const IMG = {
+  plombier1:
+    "https://www.plombierboris.fr/wp-content/uploads/2022/09/plumber-install-a-sink-in-kitchen-of-plumber-repai-2022-08-01-04-00-07-utc-1024x683.jpg",
+  plombier2:
+    "https://www.plombierboris.fr/wp-content/uploads/2022/09/repair-in-plumber-installing-assemble-new-mixer-ta-2022-08-01-04-00-20-utc-1024x683.jpg",
+  plombier3:
+    "https://www.plombierboris.fr/wp-content/uploads/2022/09/cropped-shot-of-male-plumber-using-plunger-and-cle-2021-08-30-01-25-54-utc-1024x683.jpg",
+  plombier4:
+    "https://www.plombierboris.fr/wp-content/uploads/2022/09/plumber-fixing-a-sink-at-home-2021-09-02-16-30-58-utc-1024x683.jpg",
+};
 
 const fadeUp = {
   hidden: { opacity: 0, y: 28 },
@@ -79,8 +91,7 @@ export default function Home() {
               variants={fadeRight}
             >
               <div className="img-organic absolute right-0 top-0 h-64 w-72 overflow-hidden shadow-xl">
-                {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img src="/img/plombier-1.jpg" alt="" className="h-full w-full object-cover opacity-95" />
+                <Image src={IMG.plombier1} alt="" fill className="object-cover opacity-95" sizes="288px" />
               </div>
             </motion.div>
           </div>
@@ -160,17 +171,16 @@ export default function Home() {
               variants={fadeRight}
             >
               <div className="collage-img collage-1">
-                {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img src="/img/plombier-1.jpg" alt="" className="h-full w-full object-cover" />
+                <Image src={IMG.plombier1} alt="" fill className="object-cover" sizes="(max-width: 768px) 50vw, 25vw" />
               </div>
               <div className="collage-img collage-2">
-                <img src="/img/plombier-2.jpg" alt="" className="h-full w-full object-cover" />
+                <Image src={IMG.plombier2} alt="" fill className="object-cover" sizes="(max-width: 768px) 50vw, 25vw" />
               </div>
               <div className="collage-img collage-3">
-                <img src="/img/plombier-3.jpg" alt="" className="h-full w-full object-cover" />
+                <Image src={IMG.plombier3} alt="" fill className="object-cover" sizes="(max-width: 768px) 50vw, 25vw" />
               </div>
               <div className="collage-img collage-4">
-                <img src="/img/plombier-4.jpg" alt="" className="h-full w-full object-cover" />
+                <Image src={IMG.plombier4} alt="" fill className="object-cover" sizes="(max-width: 768px) 50vw, 25vw" />
               </div>
             </motion.div>
           </div>
@@ -189,7 +199,7 @@ export default function Home() {
               variants={fadeLeft}
             >
               <div className="img-plumber absolute bottom-0 left-0 right-0 top-0 overflow-hidden shadow-2xl md:relative md:top-4 md:left-0 md:h-[320px] md:w-[90%]">
-                <img src="/img/plombier-1.jpg" alt="Plombier" className="h-64 w-full object-cover md:h-full" />
+                <Image src={IMG.plombier1} alt="Plombier" fill className="object-cover" sizes="(max-width: 768px) 100vw, 90vw" />
               </div>
             </motion.div>
 
@@ -260,8 +270,8 @@ export default function Home() {
               viewport={{ once: true, amount: 0.2 }}
               variants={fadeRight}
             >
-              <div className="overflow-hidden rounded-lg shadow-md">
-                <img src="/img/plombier-2.jpg" alt="Plombier Monsieur Boris" className="h-40 w-full object-cover" />
+              <div className="overflow-hidden rounded-lg shadow-md relative h-40 w-full">
+                <Image src={IMG.plombier2} alt="Plombier Monsieur Boris" fill className="object-cover" sizes="(max-width: 1024px) 50vw, 33vw" />
               </div>
               <div className="mt-2 flex gap-1 text-amber-400">
                 {Array.from({ length: 5 }).map((_, i) => (
@@ -343,7 +353,7 @@ export default function Home() {
 
             <motion.a
               className="btn btn-primary mt-6"
-              href="#contact"
+              href="tel:+33661315907"
               whileHover={{ scale: 1.03 }}
               whileTap={{ scale: 0.98 }}
             >
@@ -446,7 +456,7 @@ export default function Home() {
         >
           <div className="flex flex-wrap items-start justify-between gap-6">
             <h2 className="text-xl font-extrabold">Contactez un Plombier – Obtenez un devis</h2>
-            <a className="btn btn-primary shrink-0" href="#contact">
+            <a className="btn btn-primary shrink-0" href="tel:+33661315907">
               DEVIS GRATUIT
             </a>
           </div>
@@ -514,7 +524,7 @@ export default function Home() {
               <span className="text-sm font-semibold">Monsieur Boris – Satisfaction client 5/5</span>
             </div>
 
-            <p className="text-xs opacity-70">© 2026 – Monsieur Boris · Conception ISCLE Agence Web Nîmes</p>
+            <p className="text-xs opacity-70">© 2026 – Monsieur Boris · Conception <a href="https://rcedric.netlify.app" target="_blank" rel="noopener noreferrer">Cedric Randriamanjaka</a></p>
           </div>
         </motion.div>
       </footer>
