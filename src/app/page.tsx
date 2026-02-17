@@ -43,16 +43,16 @@ export default function Home() {
                   <Wrench className="text-white" size={28} />
                 </div>
                 <span className="rounded-full bg-white/15 px-3 py-1 text-xs font-bold uppercase tracking-wider text-white">
-                  Plombier Boris, proche et disponible
+                  Depuis plus de 15 ans
                 </span>
               </motion.div>
 
               <motion.h1 variants={fadeUp} className="text-4xl font-extrabold uppercase leading-tight text-white md:text-5xl">
-                Plombier Boris
+                Urgence Plomberie
               </motion.h1>
 
               <motion.p variants={fadeUp} className="mt-3 text-lg font-extrabold text-white/95">
-                Intervention 24h/24 – 7j/7
+                2 plombiers à proximité : Intervention rapide 7J/7 et 24H/24
               </motion.p>
 
               <motion.p variants={fadeUp} className="mt-6 text-lg text-white/95">
@@ -107,25 +107,37 @@ export default function Home() {
                   <span className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-brand-cta text-white">
                     <Check size={14} strokeWidth={3} />
                   </span>
-                  <span className="uppercase">Réseau de professionnels partenaires</span>
+                  <span className="uppercase">Diagnostic complet</span>
                 </motion.li>
                 <motion.li variants={fadeUp} className="flex items-center gap-3 text-sm font-bold text-brand-navy">
                   <span className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-brand-cta text-white">
                     <Check size={14} strokeWidth={3} />
                   </span>
-                  <span className="uppercase">Intervention à domicile</span>
+                  <span className="uppercase">Intervention rapide</span>
                 </motion.li>
                 <motion.li variants={fadeUp} className="flex items-center gap-3 text-sm font-bold text-brand-navy">
                   <span className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-brand-cta text-white">
                     <Check size={14} strokeWidth={3} />
                   </span>
-                  <span className="uppercase">Service disponible jour et nuit</span>
+                  <span className="uppercase">Devis gratuit sur place</span>
                 </motion.li>
                 <motion.li variants={fadeUp} className="flex items-center gap-3 text-sm font-bold text-brand-navy">
                   <span className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-brand-cta text-white">
                     <Check size={14} strokeWidth={3} />
                   </span>
-                  <span className="uppercase">Mise en relation rapide</span>
+                  <span className="uppercase">Interlocuteur unique</span>
+                </motion.li>
+                <motion.li variants={fadeUp} className="flex items-center gap-3 text-sm font-bold text-brand-navy">
+                  <span className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-brand-cta text-white">
+                    <Check size={14} strokeWidth={3} />
+                  </span>
+                  <span className="uppercase">Proche de chez vous</span>
+                </motion.li>
+                <motion.li variants={fadeUp} className="flex items-center gap-3 text-sm font-bold text-brand-navy">
+                  <span className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-brand-cta text-white">
+                    <Check size={14} strokeWidth={3} />
+                  </span>
+                  <span className="uppercase">7J/7 – 24H/24 (y compris dimanche et jours fériés)</span>
                 </motion.li>
               </motion.ul>
 
@@ -188,12 +200,11 @@ export default function Home() {
               viewport={{ once: true, amount: 0.2 }}
               variants={fadeRight}
             >
-              <h2 className="text-3xl font-extrabold text-white">Plombier partenaire indépendant</h2>
+              <h2 className="text-3xl font-extrabold text-white">Un plombier expérimenté</h2>
               <p className="mt-4 text-white/95">
-                Selon votre demande et votre localisation, mise en relation avec un plombier{" "}
-                <span className="font-extrabold">partenaire indépendant</span> disponible.
+                Monsieur Boris intervient <span className="font-extrabold">en un temps record à votre adresse 7J/7 et 24H/24</span> (dimanche et jours fériés inclus).
               </p>
-              <p className="mt-2 text-white/90">Service disponible 24h/24 – 7j/7</p>
+              <p className="mt-2 text-white/90">2 plombiers Monsieur Boris à proximité maintenant</p>
 
               <motion.a
                 className="btn btn-cta mt-8"
@@ -225,8 +236,8 @@ export default function Home() {
               viewport={{ once: true, amount: 0.2 }}
               variants={fadeLeft}
             >
-              <p className="text-sm font-semibold uppercase tracking-wider text-brand-sky">Satisfaction client</p>
-              <h2 className="mt-1 text-3xl font-extrabold text-brand-navy">Service rapide, simple et efficace</h2>
+              <p className="text-sm font-semibold uppercase tracking-wider text-brand-sky">Satisfaction client 5/5</p>
+              <h2 className="mt-1 text-3xl font-extrabold text-brand-navy">Plus de 1860 clients satisfaits par an</h2>
               <br />
               <p className="text-slate-700">
                 Besoin d’un plombier en urgence ? Mise en relation avec un plombier{" "}
@@ -250,7 +261,7 @@ export default function Home() {
               variants={fadeRight}
             >
               <div className="overflow-hidden rounded-lg shadow-md">
-                <img src="/img/plombier-2.jpg" alt="" className="h-40 w-full object-cover" />
+                <img src="/img/plombier-2.jpg" alt="Plombier Monsieur Boris" className="h-40 w-full object-cover" />
               </div>
               <div className="mt-2 flex gap-1 text-amber-400">
                 {Array.from({ length: 5 }).map((_, i) => (
@@ -258,6 +269,32 @@ export default function Home() {
                 ))}
               </div>
             </motion.div>
+
+            <div className="lg:col-span-5 mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+              {[
+                { author: "Mireille P.", text: "J'avais une fuite à l'évier de ma cuisine et elle a été réparée très rapidement. Un plombier Monsieur Boris était près de chez moi et il est intervenu en quelques minutes seulement.", rating: 5 },
+                { author: "Boutique - Opérateur téléphonique", text: "Grâce à l'intervention rapide de ce plombier, nous avons pu rouvrir notre boutique très vite : La fuite a été réparée aussitôt. Merci pour l'efficacité !", rating: 5 },
+                { author: "Agence immobilière", text: "Réparation en urgence dans nos bureaux. Discrétion et professionnalisme. Super plombier !", rating: 5 },
+                { author: "Jean-Claude T.", text: "Intervention rapide un dimanche. Travail soigné et tarif raisonnable", rating: 5 },
+              ].map((t, i) => (
+                <motion.div
+                  key={i}
+                  variants={fadeUp}
+                  initial="hidden"
+                  whileInView="visible"
+                  viewport={{ once: true, amount: 0.2 }}
+                  className="card p-4"
+                >
+                  <div className="flex gap-1 text-amber-400">
+                    {Array.from({ length: t.rating }).map((_, j) => (
+                      <Star key={j} size={16} fill="currentColor" />
+                    ))}
+                  </div>
+                  <p className="mt-2 text-sm text-slate-700">{t.text}</p>
+                  <p className="mt-2 text-xs font-semibold text-brand-navy">{t.author}</p>
+                </motion.div>
+              ))}
+            </div>
           </div>
         </motion.div>
       </section>
@@ -272,7 +309,7 @@ export default function Home() {
           variants={fadeUp}
         >
           <p className="text-sm font-semibold uppercase tracking-wider text-brand-sky">Nos services</p>
-          <h2 className="mt-1 text-3xl font-extrabold text-brand-navy">Nos services</h2>
+          <h2 className="mt-1 text-3xl font-extrabold text-brand-navy">Toutes réparations en plomberie</h2>
 
           <motion.div
             className="service-strip mt-8 rounded-r-lg bg-white p-6 shadow-soft"
@@ -284,30 +321,25 @@ export default function Home() {
             <ul className="grid gap-4 sm:grid-cols-2">
               <li className="flex items-center gap-3">
                 <Wrench className="shrink-0 text-brand-primary" size={20} />
-                <span className="font-semibold text-brand-navy">Dépannage plomberie</span>
+                <span className="font-semibold text-brand-navy">Recherche et réparation de fuite d&apos;eau</span>
               </li>
               <li className="flex items-center gap-3">
                 <Wrench className="shrink-0 text-brand-primary" size={20} />
-                <span className="font-semibold text-brand-navy">Recherche et réparation de fuite</span>
+                <span className="font-semibold text-brand-navy">Installation de plomberie</span>
               </li>
               <li className="flex items-center gap-3">
                 <Wrench className="shrink-0 text-brand-primary" size={20} />
-                <span className="font-semibold text-brand-navy">Débouchage WC et canalisations</span>
+                <span className="font-semibold text-brand-navy">Débouchage de canalisations</span>
               </li>
               <li className="flex items-center gap-3">
                 <Wrench className="shrink-0 text-brand-primary" size={20} />
-                <span className="font-semibold text-brand-navy">Remplacement chauffe-eau</span>
+                <span className="font-semibold text-brand-navy">Réparation ou changement chauffe eau</span>
               </li>
               <li className="flex items-center gap-3">
                 <Wrench className="shrink-0 text-brand-primary" size={20} />
-                <span className="font-semibold text-brand-navy">Travaux et installations sanitaires</span>
+                <span className="font-semibold text-brand-navy">Intervention chasse d&apos;eau</span>
               </li>
             </ul>
-
-            <p className="mt-6 text-slate-700">
-              Selon votre demande et votre localisation, orientation vers un plombier{" "}
-              <span className="font-extrabold">partenaire indépendant</span> disponible.
-            </p>
 
             <motion.a
               className="btn btn-primary mt-6"
@@ -388,7 +420,8 @@ export default function Home() {
             viewport={{ once: true, amount: 0.2 }}
             variants={fadeUp}
           >
-            <h3 className="text-xl font-extrabold text-brand-navy">Intervention rapide</h3>
+            <h3 className="text-xl font-extrabold text-brand-navy">Un petit soucis de plomberie ?</h3>
+            <p className="mt-2 text-slate-600">Contactez un Plombier – Obtenez un devis. Plombier 24H/24 7J/7.</p>
             <motion.a
               className="btn btn-cta mt-4 w-full text-lg"
               href="tel:+33661315907"
@@ -397,7 +430,7 @@ export default function Home() {
             >
               <Phone size={20} /> 06 61 31 59 07
             </motion.a>
-            <p className="mt-4 text-sm text-slate-600">Réseau d&apos;artisans partenaires sélectionnés.</p>
+            <p className="mt-4 text-sm text-slate-600">Si je ne peux pas vous répondre, je vous rappelle sous 5 minutes maximum !</p>
           </motion.div>
         </div>
       </section>
@@ -424,10 +457,10 @@ export default function Home() {
                 <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-white/10">
                   <Wrench className="text-white" size={24} />
                 </div>
-                <span className="text-lg font-extrabold">Plombier proche et disponible</span>
+                <span className="text-lg font-extrabold">Monsieur Boris</span>
               </div>
               <p className="mt-3 text-sm opacity-90">06 61 31 59 07</p>
-              <p className="mt-1 text-xs opacity-75">Réseau d&apos;artisans partenaires sélectionnés.</p>
+              <p className="mt-1 text-xs opacity-75">Plombier 24H/24 7J/7 – Intervention rapide</p>
             </div>
 
             <div>
@@ -435,23 +468,23 @@ export default function Home() {
               <ul className="mt-3 space-y-2 text-sm opacity-90">
                 <li className="flex items-center gap-2">
                   <span className="h-1.5 w-1.5 rounded-full bg-brand-cta" />
-                  <a href="#services">Dépannage plomberie</a>
+                  <a href="#urgence">Urgence Plomberie</a>
                 </li>
                 <li className="flex items-center gap-2">
                   <span className="h-1.5 w-1.5 rounded-full bg-brand-cta" />
-                  <a href="#services">Recherche et réparation de fuite</a>
+                  <a href="#services">Recherche de fuite</a>
                 </li>
                 <li className="flex items-center gap-2">
                   <span className="h-1.5 w-1.5 rounded-full bg-brand-cta" />
-                  <a href="#services">Débouchage WC et canalisations</a>
+                  <a href="#services">Plomberie Sanitaire</a>
                 </li>
                 <li className="flex items-center gap-2">
                   <span className="h-1.5 w-1.5 rounded-full bg-brand-cta" />
-                  <a href="#services">Remplacement chauffe-eau</a>
+                  <a href="#services">Chasse d&apos;eau</a>
                 </li>
                 <li className="flex items-center gap-2">
                   <span className="h-1.5 w-1.5 rounded-full bg-brand-cta" />
-                  <a href="#services">Travaux et installations sanitaires</a>
+                  <a href="#services">Débouchage</a>
                 </li>
               </ul>
             </div>
@@ -478,10 +511,10 @@ export default function Home() {
           <div className="mt-10 flex flex-wrap items-center justify-between gap-4 border-t border-white/20 pt-8">
             <div className="flex items-center gap-2 rounded-full bg-white/10 px-4 py-2">
               <Star className="text-amber-400" size={18} fill="currentColor" />
-              <span className="text-sm font-semibold">confiance Avis</span>
+              <span className="text-sm font-semibold">Monsieur Boris – Satisfaction client 5/5</span>
             </div>
 
-            <p className="text-xs opacity-70">© 2026 – Plombier proche et disponible · Conception ISCLE Agence Web Nîmes</p>
+            <p className="text-xs opacity-70">© 2026 – Monsieur Boris · Conception ISCLE Agence Web Nîmes</p>
           </div>
         </motion.div>
       </footer>
