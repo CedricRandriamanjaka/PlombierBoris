@@ -45,7 +45,27 @@ body { @apply bg-white text-brand-text; }
     text-shadow: 0 0 18px rgba(250, 204, 21, 0.9);
   }
 }
+
+@keyframes blink-black {
+  0%, 100% {
+    opacity: 1;
+    transform: translateY(0);
+    color: #000000;
+    text-shadow: 0 0 0 rgba(0, 0, 0, 0);
+  }
+  50% {
+    opacity: 1;
+    transform: translateY(-1px);
+    color: #facc15;
+    text-shadow: 0 0 18px rgba(250, 204, 21, 0.9);
+  }
+}
+
 .animate-blink {
   animation: blink 1.4s ease-in-out infinite;
+  letter-spacing: 0.18em;
+}
+.animate-blink-black {
+  animation: blink-black 1.4s ease-in-out infinite;
   letter-spacing: 0.18em;
 }

@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import { Phone, Wrench, Star, Check, Droplets, Zap, Droplet, Gauge } from "lucide-react";
+import { Phone, Wrench, Star, Check, Droplets, Zap, Droplet, Gauge, MapPin } from "lucide-react";
 import { motion } from "framer-motion";
 
 const IMG = {
@@ -113,6 +113,20 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      {/* BANNIÈRE FLOTTANTE */}
+      <div className="relative z-10 -mt-8 mb-8 flex justify-center">
+        <motion.div
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0 }}
+          variants={fadeUp}
+          className="inline-flex items-center gap-3 rounded-full bg-white px-6 py-3 shadow-lg ring-1 ring-slate-200 animate-blink"
+        >
+          <MapPin size={20} className="text-brand-cta" />
+          <span className="text-sm font-semibold animate-blink-black">Plombier détecté à 1,7 km</span>
+        </motion.div>
+      </div>
 
       {/* SECTION CONFIANCE */}
       <section className="bg-white">
