@@ -222,9 +222,14 @@ export default function Home() {
             >
               <h2 className="text-3xl font-extrabold text-white">Un plombier expérimenté</h2>
               <p className="mt-4 text-white/95">
-                Monsieur Boris intervient <span className="font-extrabold">en un temps record à votre adresse 7J/7 et 24H/24</span> (dimanche et jours fériés inclus).
+              Nos plombiers partenaires interviennent <span className="font-extrabold">rapidement à votre adresse 7J/7 et 24H/24 </span>(dimanche et jours fériés inclus).
               </p>
-              <p className="mt-2 text-white/90">2 plombiers Monsieur Boris à proximité maintenant</p>
+              <motion.p
+                variants={fadeUp}
+                className="mt-3 inline-flex items-center gap-3 rounded-full bg-white/10 px-4 py-2 text-sm font-semibold text-white animate-blink"
+              >
+                2 plombiers à proximité maintenant, à 1,7 km
+              </motion.p>
 
               <motion.a
                 className="btn btn-cta mt-8"

@@ -48,5 +48,4 @@ body { @apply bg-white text-brand-text; }
 .animate-blink {
   animation: blink 1.4s ease-in-out infinite;
   letter-spacing: 0.18em;
-  text-transform: uppercase;
 }
