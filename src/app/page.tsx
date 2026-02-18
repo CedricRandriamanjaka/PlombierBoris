@@ -562,12 +562,9 @@ export default function Home() {
         </motion.div>
       </footer>
 
-      <div className="fixed bottom-0 left-0 right-0 z-50 grid grid-cols-2 md:hidden">
+      <div className="fixed bottom-0 left-0 right-0 z-50 grid grid-cols-1 md:hidden">
         <a className="btn btn-cta py-4" href="tel:+33644662638">
           <Phone size={18} /> Appeler
-        </a>
-        <a className="btn btn-ghost py-4" href="#contact">
-          Devis
         </a>
       </div>
       <div className="h-16 md:hidden" />
