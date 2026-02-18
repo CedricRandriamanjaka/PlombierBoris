@@ -50,36 +50,52 @@ export default function Home() {
               animate="visible"
               variants={stagger}
             >
-              <motion.div variants={fadeUp} className="mb-6 flex items-center gap-3">
-                <div className="flex h-14 w-14 shrink-0 items-center justify-center rounded-full bg-white/20 ring-2 ring-white/40">
-                  <Wrench className="text-white" size={28} />
-                </div>
-                <span className="rounded-full bg-white/15 px-3 py-1 text-xs font-bold uppercase tracking-wider text-white">
-                  Depuis plus de 15 ans
-                </span>
-              </motion.div>
-
-              <motion.h1 variants={fadeUp} className="text-4xl font-extrabold uppercase leading-tight text-white md:text-5xl">
+              <motion.h1 variants={fadeUp} className="mb-6 flex flex-wrap items-center gap-4 text-4xl font-extrabold uppercase leading-tight text-white md:text-5xl">
+                <Image
+                  src="/img/logo-contour-289x300.png"
+                  alt="Logo Monsieur Boris"
+                  width={200}
+                  height={200}
+                />
                 Urgence Plomberie
               </motion.h1>
 
-              <motion.p variants={fadeUp} className="mt-3 text-lg font-extrabold text-white/95">
-                2 plombiers à proximité : Intervention rapide 7J/7 et 24H/24
+              <motion.p
+                variants={fadeUp}
+                className="mt-3 inline-flex items-center gap-3 rounded-full bg-white/10 px-4 py-2 text-sm font-semibold uppercase tracking-[0.2em] text-white shadow-soft animate-blink md:text-base"
+              >
+                <Zap size={18} className="text-brand-cta" />
+                2 plombiers à proximité · Intervention rapide 7J/7 et 24H/24
               </motion.p>
 
-              <motion.p variants={fadeUp} className="mt-6 text-lg text-white/95">
-                Besoin d’un plombier en urgence ? Notre service vous met en relation avec un plombier{" "}
-                <span className="font-extrabold">partenaire indépendant</span> intervenant dans votre secteur, selon les disponibilités.
-              </motion.p>
+              <motion.div
+                variants={fadeUp}
+                className="mt-6 space-y-3 text-base leading-relaxed text-white/95 md:space-y-4 md:text-lg"
+              >
+                <p>
+                  Une urgence ? Une fuite capricieuse ? Canalisation bouchée, chauffe-eau en panne, dégât des eaux ou fuite imprévisible…
+                </p>
+                <p>
+                  Nous savons à quel point une urgence plomberie peut rapidement devenir stressante.{" "}
+                  <span className="font-semibold">👉 Restez serein.</span>
+                </p>
+                <p className="pt-1">
+                  <span className="font-semibold">📞 Allô Monsieur Boris</span> est une mise en relation avec nos artisans partenaires.
+                </p>
+                <p>
+                  Nous transmettons immédiatement votre demande à un plombier partenaire indépendant, disponible à proximité de votre domicile, afin de
+                  faciliter une intervention rapide et efficace.
+                </p>
+              </motion.div>
 
               <motion.a
                 variants={fadeUp}
                 className="btn btn-cta mt-6 inline-flex text-lg"
-                href="tel:+33661315907"
+                href="tel:+33644662638"
                 whileHover={{ scale: 1.03 }}
                 whileTap={{ scale: 0.98 }}
               >
-                <Phone size={22} /> 06 61 31 59 07
+                <Phone size={22} /> 06 44 66 26 38
               </motion.a>
             </motion.div>
 
@@ -118,43 +134,37 @@ export default function Home() {
                   <span className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-brand-cta text-white">
                     <Check size={14} strokeWidth={3} />
                   </span>
-                  <span className="uppercase">Diagnostic complet</span>
+                  <span className="uppercase">Mise en relation rapide</span>
                 </motion.li>
                 <motion.li variants={fadeUp} className="flex items-center gap-3 text-sm font-bold text-brand-navy">
                   <span className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-brand-cta text-white">
                     <Check size={14} strokeWidth={3} />
                   </span>
-                  <span className="uppercase">Intervention rapide</span>
+                  <span className="uppercase">Transmission immédiate de votre demande</span>
                 </motion.li>
                 <motion.li variants={fadeUp} className="flex items-center gap-3 text-sm font-bold text-brand-navy">
                   <span className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-brand-cta text-white">
                     <Check size={14} strokeWidth={3} />
                   </span>
-                  <span className="uppercase">Devis gratuit sur place</span>
+                  <span className="uppercase">Artisans partenaires disponibles le plus près de chez vous</span>
                 </motion.li>
                 <motion.li variants={fadeUp} className="flex items-center gap-3 text-sm font-bold text-brand-navy">
                   <span className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-brand-cta text-white">
                     <Check size={14} strokeWidth={3} />
                   </span>
-                  <span className="uppercase">Interlocuteur unique</span>
+                  <span className="uppercase">Intervention organisée directement avec le professionnel</span>
                 </motion.li>
                 <motion.li variants={fadeUp} className="flex items-center gap-3 text-sm font-bold text-brand-navy">
                   <span className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-brand-cta text-white">
                     <Check size={14} strokeWidth={3} />
                   </span>
-                  <span className="uppercase">Proche de chez vous</span>
-                </motion.li>
-                <motion.li variants={fadeUp} className="flex items-center gap-3 text-sm font-bold text-brand-navy">
-                  <span className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-brand-cta text-white">
-                    <Check size={14} strokeWidth={3} />
-                  </span>
-                  <span className="uppercase">7J/7 – 24H/24 (y compris dimanche et jours fériés)</span>
+                  <span className="uppercase">7 jours sur 7, 24 sur 24, y compris dimanche et jours fériés</span>
                 </motion.li>
               </motion.ul>
 
               <motion.a
                 className="btn btn-cta mt-8"
-                href="tel:+33661315907"
+                href="tel:+33644662638"
                 whileHover={{ scale: 1.03 }}
                 whileTap={{ scale: 0.98 }}
               >
@@ -218,7 +228,7 @@ export default function Home() {
 
               <motion.a
                 className="btn btn-cta mt-8"
-                href="tel:+33661315907"
+                href="tel:+33644662638"
                 whileHover={{ scale: 1.03 }}
                 whileTap={{ scale: 0.98 }}
               >
@@ -255,7 +265,7 @@ export default function Home() {
               </p>
               <motion.a
                 className="btn btn-cta mt-8"
-                href="tel:+33661315907"
+                href="tel:+33644662638"
                 whileHover={{ scale: 1.03 }}
                 whileTap={{ scale: 0.98 }}
               >
@@ -353,7 +363,7 @@ export default function Home() {
 
             <motion.a
               className="btn btn-primary mt-6"
-              href="tel:+33661315907"
+              href="tel:+33644662638"
               whileHover={{ scale: 1.03 }}
               whileTap={{ scale: 0.98 }}
             >
@@ -434,11 +444,11 @@ export default function Home() {
             <p className="mt-2 text-slate-600">Contactez un Plombier – Obtenez un devis. Plombier 24H/24 7J/7.</p>
             <motion.a
               className="btn btn-cta mt-4 w-full text-lg"
-              href="tel:+33661315907"
+              href="tel:+33644662638"
               whileHover={{ scale: 1.03 }}
               whileTap={{ scale: 0.98 }}
             >
-              <Phone size={20} /> 06 61 31 59 07
+              <Phone size={20} /> 06 44 66 26 38
             </motion.a>
             <p className="mt-4 text-sm text-slate-600">Si je ne peux pas vous répondre, je vous rappelle sous 5 minutes maximum !</p>
           </motion.div>
@@ -456,10 +466,14 @@ export default function Home() {
         >
           <div className="flex flex-wrap items-start justify-between gap-6">
             <h2 className="text-xl font-extrabold">Contactez un Plombier – Obtenez un devis</h2>
-            <a className="btn btn-primary shrink-0" href="tel:+33661315907">
+            <a className="btn btn-primary shrink-0" href="tel:+33644662638">
               DEVIS GRATUIT
             </a>
           </div>
+          <p className="mt-6 rounded-lg bg-white/10 p-4 text-sm leading-relaxed text-white/95">
+            💡 <strong>Le conseil de Monsieur Boris :</strong><br />
+            Avant de vous lancer, demandez toujours un devis détaillé à votre artisan. C&apos;est la clé pour maîtriser votre budget et éviter les mauvaises surprises !
+          </p>
 
           <div className="mt-10 grid gap-10 md:grid-cols-3">
             <div>
@@ -469,7 +483,7 @@ export default function Home() {
                 </div>
                 <span className="text-lg font-extrabold">Monsieur Boris</span>
               </div>
-              <p className="mt-3 text-sm opacity-90">06 61 31 59 07</p>
+              <p className="mt-3 text-sm opacity-90">06 44 66 26 38</p>
               <p className="mt-1 text-xs opacity-75">Plombier 24H/24 7J/7 – Intervention rapide</p>
             </div>
 
@@ -530,7 +544,7 @@ export default function Home() {
       </footer>
 
       <div className="fixed bottom-0 left-0 right-0 z-50 grid grid-cols-2 md:hidden">
-        <a className="btn btn-cta py-4" href="tel:+33661315907">
+        <a className="btn btn-cta py-4" href="tel:+33644662638">
           <Phone size={18} /> Appeler
         </a>
         <a className="btn btn-ghost py-4" href="#contact">
