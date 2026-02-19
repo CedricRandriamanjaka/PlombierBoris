@@ -78,11 +78,11 @@ export default function Footer() {
                 </li>
                 <li className="flex items-center gap-2">
                   <span className="h-1.5 w-1.5 rounded-full bg-brand-cta" />
-                  <Link href="/CGV.pdf">Conditions Générales de Vente</Link>
+                  <a href="/CGV.pdf" target="_blank" rel="noopener noreferrer">Conditions Générales de Vente</a>
                 </li>
                 <li className="flex items-center gap-2">
                   <span className="h-1.5 w-1.5 rounded-full bg-brand-cta" />
-                  <Link href="/CGU.pdf">Conditions Générales d'Utilisation</Link>
+                  <a href="/CGU.pdf" target="_blank" rel="noopener noreferrer">Conditions Générales d'Utilisation</a>
                 </li>
               </ul>
             </div>
