@@ -18,7 +18,7 @@ export default function MentionsLegales() {
         <div className="container py-4">
           <Link href="/" className="inline-flex items-center gap-3">
             <Image
-              src="/img/logo-contour-289x300.png"
+              src="/img/logo.png"
               alt="Logo Monsieur Boris"
               width={60}
               height={60}

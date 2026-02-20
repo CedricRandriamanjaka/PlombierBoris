@@ -53,7 +53,7 @@ export default function Home() {
             >
               <motion.h1 variants={fadeUp} className="mb-6 flex flex-wrap items-center gap-4 text-4xl font-extrabold uppercase leading-tight text-white md:text-5xl">
                 <Image
-                  src="/img/logo-contour-289x300.png"
+                  src="/img/logo.png"
                   alt="Logo Monsieur Boris"
                   width={200}
                   height={200}
