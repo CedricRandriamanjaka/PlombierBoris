@@ -19,12 +19,12 @@ export default function MentionsLegales() {
           <Link href="/" className="inline-flex items-center gap-3">
             <Image
               src="/img/logo.png"
-              alt="Logo Monsieur Boris"
+              alt="Logo AlloElectricienboris"
               width={60}
               height={60}
               className="h-auto w-auto"
             />
-            <span className="text-xl font-bold text-brand-navy">Monsieur Boris</span>
+            <span className="text-xl font-bold text-brand-navy">AlloElectricienboris</span>
           </Link>
         </div>
       </header>
@@ -44,7 +44,7 @@ export default function MentionsLegales() {
           <div className="prose prose-slate max-w-none space-y-8 text-brand-text">
             {/* Informations générales */}
             <section>
-              <h2 className="mb-4 text-2xl font-bold text-brand-navy">Le site internet plombierboris.fr</h2>
+              <h2 className="mb-4 text-2xl font-bold text-brand-navy">Le site internet alloelectricienboris.fr</h2>
               <p className="mb-2">
                 <strong>Adresse de courrier électronique :</strong>{" "}
                 <a href="mailto:plombier30000@gmail.com" className="text-brand-primary hover:underline">
@@ -60,7 +60,7 @@ export default function MentionsLegales() {
             <section>
               <h2 className="mb-4 text-2xl font-bold text-brand-navy">Politique de confidentialité</h2>
               <p className="mb-4">
-                Le site <strong>www.plombierboris.fr</strong> utilise des cookies. Lors de la consultation du site, des cookies sont déposés sur votre ordinateur, votre tablette ou votre smartphone. Les informations ci-dessous vous permettent de mieux comprendre comment fonctionnent les cookies et comment utiliser les outils actuels afin de les paramétrer.
+                Le site <strong>www.alloelectricienboris.fr</strong> utilise des cookies. Lors de la consultation du site, des cookies sont déposés sur votre ordinateur, votre tablette ou votre smartphone. Les informations ci-dessous vous permettent de mieux comprendre comment fonctionnent les cookies et comment utiliser les outils actuels afin de les paramétrer.
               </p>
 
               {/* Qu'est-ce qu'un cookie */}

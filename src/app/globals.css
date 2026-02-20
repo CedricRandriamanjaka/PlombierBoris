@@ -9,8 +9,8 @@ body { @apply bg-white text-brand-text; }
 .btn {
   @apply inline-flex items-center justify-center gap-2 px-5 py-3 font-semibold transition rounded-md;
 }
-.btn-cta { @apply bg-brand-cta text-white shadow-md hover:bg-brand-ctaHover; }
-.btn-primary { @apply bg-brand-primary text-white hover:opacity-95; }
+.btn-cta { @apply bg-brand-cta text-slate-900 shadow-md hover:bg-brand-ctaHover font-bold; }
+.btn-primary { @apply bg-brand-primary text-slate-900 hover:opacity-95 font-bold; }
 .btn-ghost { @apply bg-white text-brand-navy ring-1 ring-slate-200 hover:bg-slate-50; }
 .card { @apply bg-white shadow-soft ring-1 ring-slate-100 rounded-md; }
 
@@ -24,7 +24,7 @@ body { @apply bg-white text-brand-text; }
 .hero-shape-2 { width: 180px; height: 180px; top: 30%; right: -40px; background: rgba(255,255,255,0.08); }
 .img-organic { border-radius: 50% 40% 60% 50% / 60% 30% 70% 40%; }
 .img-plumber { border-radius: 55% 45% 50% 50% / 45% 55% 45% 55%; }
-.service-strip { border-left: 4px solid #0B5ED7; }
+.service-strip { border-left: 4px solid #FFD700; }
 .collage-img { position: absolute; overflow: hidden; border-radius: 8px; box-shadow: 0 4px 20px rgba(0,0,0,0.12); }
 .collage-1 { width: 55%; height: 70%; left: 0; top: 0; }
 .collage-2 { width: 45%; height: 50%; left: 35%; top: 10%; }
@@ -41,8 +41,8 @@ body { @apply bg-white text-brand-text; }
   50% {
     opacity: 1;
     transform: translateY(-1px);
-    color: #facc15; /* jaune lumière */
-    text-shadow: 0 0 18px rgba(250, 204, 21, 0.9);
+    color: #FFD700; /* jaune électrique logo */
+    text-shadow: 0 0 18px rgba(255, 215, 0, 0.9);
   }
 }
 
@@ -56,8 +56,8 @@ body { @apply bg-white text-brand-text; }
   50% {
     opacity: 1;
     transform: translateY(-1px);
-    color: #facc15;
-    text-shadow: 0 0 18px rgba(250, 204, 21, 0.9);
+    color: #FFD700;
+    text-shadow: 0 0 18px rgba(255, 215, 0, 0.9);
   }
 }
 

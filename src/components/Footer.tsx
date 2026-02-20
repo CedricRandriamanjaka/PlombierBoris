@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { Phone, Wrench, Star } from "lucide-react";
+import { Phone, Zap, Star } from "lucide-react";
 import { motion } from "framer-motion";
 
 const fadeUp = {
@@ -21,13 +21,13 @@ export default function Footer() {
           variants={fadeUp}
         >
           <div className="flex flex-wrap items-start justify-between gap-6">
-            <h2 className="text-xl font-extrabold">Contactez un Plombier – Obtenez un devis</h2>
+            <h2 className="text-xl font-extrabold">Contactez un Électricien – Obtenez un devis</h2>
             <a className="btn btn-primary shrink-0" href="tel:+33644662638">
               DEVIS GRATUIT
             </a>
           </div>
           <p className="mt-6 rounded-lg bg-white/10 p-4 text-sm leading-relaxed text-white/95">
-            💡 <strong>Le conseil de Monsieur Boris :</strong><br />
+            💡 <strong>Le conseil de votre électricien :</strong><br />
             Avant de vous lancer, demandez toujours un devis détaillé à votre artisan. C&apos;est la clé pour maîtriser votre budget et éviter les mauvaises surprises !
           </p>
 
@@ -35,12 +35,12 @@ export default function Footer() {
             <div>
               <div className="flex items-center gap-3">
                 <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-white/10">
-                  <Wrench className="text-white" size={24} />
+                  <Zap className="text-amber-400" size={24} />
                 </div>
-                <span className="text-lg font-extrabold">Monsieur Boris</span>
+                <span className="text-lg font-extrabold">AlloElectricienboris</span>
               </div>
               <p className="mt-3 text-sm opacity-90">06 44 66 26 38</p>
-              <p className="mt-1 text-xs opacity-75">Plombier 24H/24 7J/7 – Intervention rapide</p>
+              <p className="mt-1 text-xs opacity-75">Électricien 24H/24 7J/7 – Intervention rapide</p>
             </div>
 
             <div>
@@ -48,23 +48,23 @@ export default function Footer() {
               <ul className="mt-3 space-y-2 text-sm opacity-90">
                 <li className="flex items-center gap-2">
                   <span className="h-1.5 w-1.5 rounded-full bg-brand-cta" />
-                  <Link href="/#urgence">Urgence Plomberie</Link>
+                  <Link href="/#urgence">Urgence Électricité</Link>
                 </li>
                 <li className="flex items-center gap-2">
                   <span className="h-1.5 w-1.5 rounded-full bg-brand-cta" />
-                  <Link href="/#services">Recherche de fuite</Link>
+                  <Link href="/#services">Dépannage de panne électrique</Link>
                 </li>
                 <li className="flex items-center gap-2">
                   <span className="h-1.5 w-1.5 rounded-full bg-brand-cta" />
-                  <Link href="/#services">Plomberie Sanitaire</Link>
+                  <Link href="/#services">Mise aux normes électrique</Link>
                 </li>
                 <li className="flex items-center gap-2">
                   <span className="h-1.5 w-1.5 rounded-full bg-brand-cta" />
-                  <Link href="/#services">Chasse d&apos;eau</Link>
+                  <Link href="/#services">Tableau électrique</Link>
                 </li>
                 <li className="flex items-center gap-2">
                   <span className="h-1.5 w-1.5 rounded-full bg-brand-cta" />
-                  <Link href="/#services">Débouchage</Link>
+                  <Link href="/#services">Prises &amp; interrupteurs</Link>
                 </li>
               </ul>
             </div>
@@ -91,10 +91,10 @@ export default function Footer() {
           <div className="mt-10 flex flex-wrap items-center justify-between gap-4 border-t border-white/20 pt-8">
             <div className="flex items-center gap-2 rounded-full bg-white/10 px-4 py-2">
               <Star className="text-amber-400" size={18} fill="currentColor" />
-              <span className="text-sm font-semibold">Monsieur Boris – Satisfaction client 5/5</span>
+              <span className="text-sm font-semibold">AlloElectricienboris – Satisfaction client 5/5</span>
             </div>
 
-            <p className="text-xs opacity-70">© 2026 – Monsieur Boris · Conception <a href="https://rcedric.netlify.app" target="_blank" rel="noopener noreferrer">Cedric Randriamanjaka</a></p>
+            <p className="text-xs opacity-70">© 2026 – AlloElectricienboris · Conception <a href="https://rcedric.netlify.app" target="_blank" rel="noopener noreferrer">Cedric Randriamanjaka</a></p>
           </div>
         </motion.div>
       </footer>

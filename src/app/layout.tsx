@@ -3,8 +3,8 @@ import type { Metadata } from "next";
 import Script from "next/script";
 
 export const metadata: Metadata = {
-  title: "Urgence Plomberie à proximité | Monsieur Boris",
-  description: "Plombier 24/7 – Intervention rapide 7J/7 et 24H/24. Devis gratuit.",
+  title: "Urgence électricien à proximité | AlloElectricienboris",
+  description: "Électricien 24/7 – Intervention rapide 7J/7 et 24H/24. Devis gratuit.",
   icons: {
     icon: "/img/logo.png",
   },

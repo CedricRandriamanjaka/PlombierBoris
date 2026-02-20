@@ -7,13 +7,13 @@ import Footer from "@/components/Footer";
 
 const IMG = {
   plombier1:
-    "https://www.plombierboris.fr/wp-content/uploads/2022/09/plumber-install-a-sink-in-kitchen-of-plumber-repai-2022-08-01-04-00-07-utc-1024x683.jpg",
+  "/img/image1.jpg",
   plombier2:
-    "https://www.plombierboris.fr/wp-content/uploads/2022/09/repair-in-plumber-installing-assemble-new-mixer-ta-2022-08-01-04-00-20-utc-1024x683.jpg",
+  "/img/image2.jpg",
   plombier3:
-    "https://www.plombierboris.fr/wp-content/uploads/2022/09/cropped-shot-of-male-plumber-using-plunger-and-cle-2021-08-30-01-25-54-utc-1024x683.jpg",
+  "/img/image3.jpg",
   plombier4:
-    "https://www.plombierboris.fr/wp-content/uploads/2022/09/plumber-fixing-a-sink-at-home-2021-09-02-16-30-58-utc-1024x683.jpg",
+  "/img/image4.jpg",
 };
 
 const fadeUp = {
@@ -39,7 +39,7 @@ const stagger = {
 export default function Home() {
   return (
     <main>
-      <section id="urgence" className="relative overflow-hidden bg-gradient-to-br from-brand-primary to-brand-navy">
+      <section id="urgence" className="relative overflow-hidden bg-gradient-to-br from-brand-navy to-brand-primary">
         <div className="hero-shape hero-shape-1" />
         <div className="hero-shape hero-shape-2" />
 
@@ -54,11 +54,11 @@ export default function Home() {
               <motion.h1 variants={fadeUp} className="mb-6 flex flex-wrap items-center gap-4 text-4xl font-extrabold uppercase leading-tight text-white md:text-5xl">
                 <Image
                   src="/img/logo.png"
-                  alt="Logo Monsieur Boris"
+                  alt="Logo AlloElectricienboris"
                   width={200}
                   height={200}
                 />
-                Urgence Plomberie
+                Urgence Électricien
               </motion.h1>
 
               <motion.p
@@ -66,7 +66,7 @@ export default function Home() {
                 className="mt-3 inline-flex items-center gap-3 rounded-full bg-white/10 px-4 py-2 text-sm font-semibold uppercase tracking-[0.2em] text-white shadow-soft animate-blink md:text-base"
               >
                 <Zap size={18} className="text-brand-cta" />
-                2 plombiers à proximité · Intervention rapide 7J/7 et 24H/24
+                2 électriciens à proximité · Intervention rapide 7J/7 et 24H/24
               </motion.p>
 
               <motion.div
@@ -74,17 +74,17 @@ export default function Home() {
                 className="mt-6 space-y-3 text-base leading-relaxed text-white/95 md:space-y-4 md:text-lg"
               >
                 <p>
-                  Une urgence ? Une fuite capricieuse ? Canalisation bouchée, chauffe-eau en panne, dégât des eaux ou fuite imprévisible…
+                  Une urgence ? Panne de courant soudaine ? Tableau qui disjoncte, prise qui chauffe, court-circuit ou odeur de brûlé…
                 </p>
                 <p>
-                  Nous savons à quel point une urgence plomberie peut rapidement devenir stressante.{" "}
+                  Nous savons à quel point une urgence électrique peut rapidement devenir stressante.{" "}
                   <span className="font-semibold">👉 Restez serein.</span>
                 </p>
                 <p className="pt-1">
-                  <span className="font-semibold">📞 Allô Monsieur Boris</span> est une mise en relation avec nos artisans partenaires.
+                  <span className="font-semibold">📞 AlloElectricienboris</span> est une mise en relation avec nos artisans partenaires.
                 </p>
                 <p>
-                  Nous transmettons immédiatement votre demande à un plombier partenaire indépendant, disponible à proximité de votre domicile, afin de
+                  Nous transmettons immédiatement votre demande à un électricien partenaire indépendant, disponible à proximité de votre domicile, afin de
                   faciliter une intervention rapide et efficace.
                 </p>
               </motion.div>
@@ -125,7 +125,7 @@ export default function Home() {
           className="inline-flex items-center gap-3 rounded-full bg-white px-6 py-3 shadow-lg ring-1 ring-slate-200 animate-blink"
         >
           <MapPin size={20} className="text-brand-cta" />
-          <span className="text-sm font-semibold animate-blink-black">Plombier détecté à 1,7 km</span>
+          <span className="text-sm font-semibold animate-blink-black">Électricien détecté à 1,7 km</span>
         </motion.div>
       </div>
 
@@ -139,7 +139,7 @@ export default function Home() {
           variants={fadeUp}
         >
           <h2 className="text-3xl font-extrabold text-brand-navy md:text-4xl">
-            Faites appel à un plombier de confiance chez vous
+            Faites appel à un électricien de confiance chez vous
           </h2>
 
           <div className="mt-10 grid gap-10 md:grid-cols-2 md:items-center">
@@ -213,7 +213,7 @@ export default function Home() {
       </section>
 
       {/* SECTION PARTENAIRE */}
-      <section className="bg-brand-primary">
+      <section className="bg-brand-navy">
         <div className="container py-0">
           <div className="grid md:grid-cols-2 md:items-stretch">
             <motion.div
@@ -224,7 +224,7 @@ export default function Home() {
               variants={fadeLeft}
             >
               <div className="img-plumber absolute bottom-0 left-0 right-0 top-0 overflow-hidden shadow-2xl md:relative md:top-4 md:left-0 md:h-[320px] md:w-[90%]">
-                <Image src={IMG.plombier1} alt="Plombier" fill className="object-cover" sizes="(max-width: 768px) 100vw, 90vw" />
+                <Image src={IMG.plombier1} alt="Électricien en intervention" fill className="object-cover" sizes="(max-width: 768px) 100vw, 90vw" />
               </div>
             </motion.div>
 
@@ -235,15 +235,15 @@ export default function Home() {
               viewport={{ once: true, amount: 0.2 }}
               variants={fadeRight}
             >
-              <h2 className="text-3xl font-extrabold text-white">Un plombier expérimenté</h2>
+              <h2 className="text-3xl font-extrabold text-white">Un électricien expérimenté</h2>
               <p className="mt-4 text-white/95">
-              Nos plombiers partenaires interviennent <span className="font-extrabold">rapidement à votre adresse 7J/7 et 24H/24 </span>(dimanche et jours fériés inclus).
+              Nos électriciens partenaires interviennent <span className="font-extrabold">rapidement à votre adresse 7J/7 et 24H/24 </span>(dimanche et jours fériés inclus).
               </p>
               <motion.p
                 variants={fadeUp}
                 className="mt-3 inline-flex items-center gap-3 rounded-full bg-white/10 px-4 py-2 text-sm font-semibold text-white animate-blink"
               >
-                2 plombiers à proximité maintenant, à 1,7 km
+                2 électriciens à proximité maintenant, à 1,7 km
               </motion.p>
 
               <motion.a
@@ -277,10 +277,10 @@ export default function Home() {
               variants={fadeLeft}
             >
               <p className="text-sm font-semibold uppercase tracking-wider text-brand-sky">Satisfaction client 5/5</p>
-              <h2 className="mt-1 text-3xl font-extrabold text-brand-navy">Plus de 1860 clients satisfaits par an</h2>
+              <h2 className="mt-1 text-3xl font-extrabold text-brand-navy">Plus de 1860 clients dépannés chaque année</h2>
               <br />
               <p className="text-slate-700">
-                Besoin d’un plombier en urgence ? Mise en relation avec un plombier{" "}
+                Besoin d’un électricien en urgence ? Mise en relation avec un électricien{" "}
                 <span className="font-bold">partenaire indépendant</span> intervenant dans votre secteur, selon les disponibilités.
               </p>
               <motion.a
@@ -301,7 +301,7 @@ export default function Home() {
               variants={fadeRight}
             >
               <div className="overflow-hidden rounded-lg shadow-md relative h-40 w-full">
-                <Image src={IMG.plombier2} alt="Plombier Monsieur Boris" fill className="object-cover" sizes="(max-width: 1024px) 50vw, 33vw" />
+                <Image src={IMG.plombier2} alt="Électricien AlloElectricienboris" fill className="object-cover" sizes="(max-width: 1024px) 50vw, 33vw" />
               </div>
               <div className="mt-2 flex gap-1 text-amber-400">
                 {Array.from({ length: 5 }).map((_, i) => (
@@ -312,9 +312,9 @@ export default function Home() {
 
             <div className="lg:col-span-5 mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
               {[
-                { author: "Mireille P.", text: "J'avais une fuite à l'évier de ma cuisine et elle a été réparée très rapidement. Un plombier Monsieur Boris était près de chez moi et il est intervenu en quelques minutes seulement.", rating: 5 },
-                { author: "Boutique - Opérateur téléphonique", text: "Grâce à l'intervention rapide de ce plombier, nous avons pu rouvrir notre boutique très vite : La fuite a été réparée aussitôt. Merci pour l'efficacité !", rating: 5 },
-                { author: "Agence immobilière", text: "Réparation en urgence dans nos bureaux. Discrétion et professionnalisme. Super plombier !", rating: 5 },
+                { author: "Mireille P.", text: "J'avais une panne sur mon tableau électrique et elle a été réparée très rapidement. Un électricien AlloElectricienboris était près de chez moi et il est intervenu en quelques minutes seulement.", rating: 5 },
+                { author: "Boutique - Opérateur téléphonique", text: "Grâce à l'intervention rapide de cet électricien, nous avons pu rouvrir notre boutique très vite : l'installation a été sécurisée aussitôt. Merci pour l'efficacité !", rating: 5 },
+                { author: "Agence immobilière", text: "Dépannage électrique en urgence dans nos bureaux. Discrétion et professionnalisme. Super électricien !", rating: 5 },
                 { author: "Jean-Claude T.", text: "Intervention rapide un dimanche. Travail soigné et tarif raisonnable", rating: 5 },
               ].map((t, i) => (
                 <motion.div
@@ -349,7 +349,7 @@ export default function Home() {
           variants={fadeUp}
         >
           <p className="text-sm font-semibold uppercase tracking-wider text-brand-sky">Nos services</p>
-          <h2 className="mt-1 text-3xl font-extrabold text-brand-navy">Toutes réparations en plomberie</h2>
+          <h2 className="mt-1 text-3xl font-extrabold text-brand-navy">Toutes interventions en électricité</h2>
 
           <motion.div
             className="service-strip mt-8 rounded-r-lg bg-white p-6 shadow-soft"
@@ -361,23 +361,23 @@ export default function Home() {
             <ul className="grid gap-4 sm:grid-cols-2">
               <li className="flex items-center gap-3">
                 <Wrench className="shrink-0 text-brand-primary" size={20} />
-                <span className="font-semibold text-brand-navy">Recherche et réparation de fuite d&apos;eau</span>
+                <span className="font-semibold text-brand-navy">Recherche et réparation de panne électrique</span>
               </li>
               <li className="flex items-center gap-3">
                 <Wrench className="shrink-0 text-brand-primary" size={20} />
-                <span className="font-semibold text-brand-navy">Installation de plomberie</span>
+                <span className="font-semibold text-brand-navy">Installation électrique (prises, luminaires, circuits)</span>
               </li>
               <li className="flex items-center gap-3">
                 <Wrench className="shrink-0 text-brand-primary" size={20} />
-                <span className="font-semibold text-brand-navy">Débouchage de canalisations</span>
+                <span className="font-semibold text-brand-navy">Mise aux normes du tableau électrique</span>
               </li>
               <li className="flex items-center gap-3">
                 <Wrench className="shrink-0 text-brand-primary" size={20} />
-                <span className="font-semibold text-brand-navy">Réparation ou changement chauffe eau</span>
+                <span className="font-semibold text-brand-navy">Dépannage de tableau et disjoncteurs</span>
               </li>
               <li className="flex items-center gap-3">
                 <Wrench className="shrink-0 text-brand-primary" size={20} />
-                <span className="font-semibold text-brand-navy">Intervention chasse d&apos;eau</span>
+                <span className="font-semibold text-brand-navy">Dépannage prises et interrupteurs</span>
               </li>
             </ul>
 
@@ -411,7 +411,7 @@ export default function Home() {
             >
               <Droplets className="mx-auto mb-2 text-brand-primary" size={32} />
               <div className="text-3xl font-extrabold text-brand-navy">4852</div>
-              <div className="mt-2 text-sm font-semibold text-slate-600">fuites réparées</div>
+              <div className="mt-2 text-sm font-semibold text-slate-600">pannes électriques dépannées</div>
             </motion.div>
 
             <motion.div
@@ -422,7 +422,7 @@ export default function Home() {
             >
               <Gauge className="mx-auto mb-2 text-brand-primary" size={32} />
               <div className="text-3xl font-extrabold text-brand-navy">2593</div>
-              <div className="mt-2 text-sm font-semibold text-slate-600">évacuations débouchées</div>
+              <div className="mt-2 text-sm font-semibold text-slate-600">tableaux remis en service</div>
             </motion.div>
 
             <motion.div
@@ -433,7 +433,7 @@ export default function Home() {
             >
               <Zap className="mx-auto mb-2 text-brand-primary" size={32} />
               <div className="text-3xl font-extrabold text-brand-navy">4623</div>
-              <div className="mt-2 text-sm font-semibold text-slate-600">recherches de fuite</div>
+              <div className="mt-2 text-sm font-semibold text-slate-600">urgences électriques prises en charge</div>
             </motion.div>
 
             <motion.div
@@ -444,7 +444,7 @@ export default function Home() {
             >
               <Droplet className="mx-auto mb-2 text-brand-primary" size={32} />
               <div className="text-3xl font-extrabold text-brand-navy">6512</div>
-              <div className="mt-2 text-sm font-semibold text-slate-600">chasses d&apos;eau remplacées</div>
+              <div className="mt-2 text-sm font-semibold text-slate-600">prises &amp; interrupteurs sécurisés</div>
             </motion.div>
           </motion.div>
         </div>
@@ -460,8 +460,8 @@ export default function Home() {
             viewport={{ once: true, amount: 0.2 }}
             variants={fadeUp}
           >
-            <h3 className="text-xl font-extrabold text-brand-navy">Un petit soucis de plomberie ?</h3>
-            <p className="mt-2 text-slate-600">Contactez un Plombier – Obtenez un devis. Plombier 24H/24 7J/7.</p>
+            <h3 className="text-xl font-extrabold text-brand-navy">Un souci électrique ?</h3>
+            <p className="mt-2 text-slate-600">Contactez un Électricien – Obtenez un devis. Électricien 24H/24 7J/7.</p>
             <motion.a
               className="btn btn-cta mt-4 w-full text-lg"
               href="tel:+33644662638"
