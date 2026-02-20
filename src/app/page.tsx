@@ -7,13 +7,13 @@ import Footer from "@/components/Footer";
 
 const IMG = {
   plombier1:
-  "/img/image1.jpg",
+  "/img/image1.png",
   plombier2:
-  "/img/image2.jpg",
+  "/img/image2.png",
   plombier3:
-  "/img/image3.jpg",
+  "/img/image3.png",
   plombier4:
-  "/img/image4.jpg",
+  "/img/image4.png",
 };
 
 const fadeUp = {
